@@ -9,7 +9,7 @@ AUTH_COOKIE_NAME = "hmsc_1901C"
 IGNORE_URLS = [
     "^/user/login"
 ]
-IGNORECHECK_LOGIN_URLS = [
+IGNORE_CHECK_LOGIN_URLS = [
     "^/static",
     "^favicon.ico"
 ]
