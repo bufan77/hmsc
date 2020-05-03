@@ -12,6 +12,8 @@ SECRET_KEY = os.urandom(24)
 from datetime import timedelta
 PERMANENT_SESSION_LIFETIME = timedelta(days=7)
 
+
+PAGE_SIZE = "6"
 #设置拦截器忽略规则
 IGNORE_URLS = [
     "^/user/login"
