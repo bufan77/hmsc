@@ -22,7 +22,7 @@ var user_edit_ops = {
                 alert('请输入与规范的邮箱')
                 return false
             }
-            
+
             btn_target.addClass("disabled");
 
             $.ajax({

@@ -10,7 +10,7 @@ def ops_render(template,context={}):
 
 # 获取当前时间，并格式化
 def getCurrentDate(format = "%Y-%m-%d %H:%M:%S" ):
-    return datetime.datetime.now()
+    return datetime.datetime.now() 
 
 # 自定义分页
 def iPagination(params):

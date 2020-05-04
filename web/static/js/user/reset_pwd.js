@@ -26,7 +26,7 @@ var mod_pwd_ops = {
             btn_target.addClass("disabled")
 
             $.ajax({
-                url:common_ops.buildUrl("/user/rest-pwd"),
+                url:common_ops.buildUrl("/user/reset-pwd"),
                 type:"POST",
                 data:{'old_password':old_password,'new_password':new_password},
                 dataType:'json',
@@ -45,6 +45,4 @@ var mod_pwd_ops = {
 
 $(document).ready(function(){
     mod_pwd_ops.init()
-})
-
-// 修改密码
+}) 

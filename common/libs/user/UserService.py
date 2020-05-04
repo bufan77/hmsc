@@ -18,11 +18,11 @@ class UserService():
         return m.hexdigest()
     
 
-    #生成16位的字符串，包含子母和数字
-    #string.ascii_letters 所有的大写字母
-    #string.digits  0-9 数字
+    # 生成16位的字符串，包含字母和数字
+    # string.ascii_letters  所有的大小写字母
+    # string.digits 0-9 数字
     @staticmethod
     def generateSalt(length=16):
-        keyList = [ random.choice(( string.ascii_letters + string.digits )) for i in range(length)]
+        keyList = [ random.choice(( string.ascii_letters + string.digits )) for i in range(length) ]
 
-        return ("".join(keyList))
+        return ("".join(keyList)) 
