@@ -2,7 +2,7 @@ from flask import Blueprint,request,jsonify,redirect
 
 from common.libs.Helper import ops_render,getCurrentDate,iPagination
 from common.libs.UrlManager import UrlManager
-# from common.models.goods.Goods import Goods
+from common.models.goods.Goods import Goods
 from application import app,db
 
 router_goods = Blueprint("goods_page",__name__)
@@ -148,4 +148,3 @@ def cat_set():
     resp_data = {}
 
     return ops_render("goods/cat_set.html")
-# © 2020 GitHub, Inc.
