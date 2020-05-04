@@ -16,7 +16,6 @@ class UserService():
         str = "%s-%s-%s-%s"%(user_info.uid,user_info.login_name,user_info.login_pwd,user_info.login_salt)
         m.update(str.encode("utf-8"))
         return m.hexdigest()
-    
 
     # 生成16位的字符串，包含字母和数字
     # string.ascii_letters  所有的大小写字母
@@ -25,4 +24,4 @@ class UserService():
     def generateSalt(length=16):
         keyList = [ random.choice(( string.ascii_letters + string.digits )) for i in range(length) ]
 
-        return ("".join(keyList)) 
+        return ("".join(keyList))

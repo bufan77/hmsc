@@ -3,7 +3,7 @@ from flask import Blueprint,request,redirect,jsonify
 from common.libs.Helper import ops_render,iPagination,getCurrentDate
 from common.libs.UrlManager import UrlManager
 from common.models.member.Member import Member
-from common.models.member.MemberComment import MemberComment
+from common.models.member.MemberComments import MemberComment
 from application import app,db
 router_member = Blueprint( 'member_page',__name__ )
 

@@ -4,8 +4,6 @@ from sqlalchemy.schema import FetchedValue
 from flask_sqlalchemy import SQLAlchemy
 from application import db
 
-db = SQLAlchemy()
-
 
 
 class Member(db.Model):

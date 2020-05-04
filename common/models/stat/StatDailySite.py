@@ -4,10 +4,6 @@ from sqlalchemy.schema import FetchedValue
 from flask_sqlalchemy import SQLAlchemy
 from application import db
 
-db = SQLAlchemy()
-
-
-
 class StatDailySite(db.Model):
     __tablename__ = 'stat_daily_site'
 

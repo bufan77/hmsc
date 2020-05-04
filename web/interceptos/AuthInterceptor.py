@@ -41,18 +41,12 @@ def before_request():
 判断用户是否已经登录
 '''
 def check_login():
-
-    # user_name = session.get('username')
-    # print('session用户名',user_name)
-    # return user_name
-
-    #获取cookie中的数据和数据库中的数据进行比对
     cookies = request.cookies
     auth_cookie = cookies[app.config['AUTH_COOKIE_NAME']] if app.config['AUTH_COOKIE_NAME'] in cookies else None
 
     if auth_cookie is None:
         return False
-    
+
     auth_info = auth_cookie.split("@")
     if len(auth_info) != 2:
         return False
@@ -64,11 +58,11 @@ def check_login():
 
     if user_info is None:
         return False
-    
-    if auth_info[0] != UserService.generateAuthCode(user_info):
+
+    if auth_info[0] != UserService.generateAuthCode( user_info ):
         return False
-    
+
     if user_info.status != 1:
         return False
-    
+
     return user_info

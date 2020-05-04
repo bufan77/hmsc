@@ -45,4 +45,4 @@ var mod_pwd_ops = {
 
 $(document).ready(function(){
     mod_pwd_ops.init()
-}) 
+})

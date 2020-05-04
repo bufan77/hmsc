@@ -18,8 +18,8 @@ def index():
                 'month':0
             },
             'member':{
-                'today':0,
-                'month':0,
+                'today_new':0,
+                'month_new':0,
                 'total':0
             },
             'shared':{
@@ -29,7 +29,8 @@ def index():
         }
     }
 
-    #日期格式化的问题
+    # 日期格式化的问题
+    # 更新数据的问题
     StatDailySite.query.all()
     return ops_render("index/index.html",resp_data)
    
